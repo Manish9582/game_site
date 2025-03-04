@@ -1,0 +1,872 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+}
+
+body {
+    background-color: rgb(21, 21, 21);
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 5px;
+    background-color: black;
+    border: 2px solid red;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background:rgba(176, 233, 255, 0.686);
+    border-radius: 10px;
+}
+.NavbarCon {
+    background: linear-gradient(to right, rgb(112, 0, 110), rgb(248, 80, 212));
+}
+
+.navBar {
+    position: fixed;
+    max-width: 1300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    padding: 5px 10px;
+    left: 0;
+    right: 0;
+    color: white;
+}
+
+.logoCon {
+    display: flex;
+    grid-column: 1/3;
+    gap: 10px;
+    align-items: center;
+}
+
+.NavImgCon {
+    height: 60px;
+    width: 60px;
+}
+
+.logoCon strong {
+    font-size: 28px;
+}
+
+.NavImgCon img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    mix-blend-mode: screen;
+}
+
+.ListNavlink {
+    grid-column: 4/10;
+    display: flex;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.ListNavlink li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+.ConHost {
+    grid-column: 11/13;
+    width: 200px;
+    padding: 7px 10px;
+    border: 2px solid rgb(199, 7, 173);
+    text-align: center;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.ConHost a {
+    text-decoration: none;
+    color: white;
+}
+
+#MenuBar {
+    display: none;
+    font-size: 26px;
+}
+
+.SlidersBtn {
+    position: relative;
+    cursor: pointer;
+    color: white;
+}
+
+#right,
+#left {
+    position: absolute;
+    margin-top: 25%;
+    padding: 3px 20px;
+    font-size: 24px;
+
+    &:hover {
+        background: white;
+        color: black;
+    }
+}
+
+#right {
+    right: 0;
+}
+
+.Wallpaper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.sliderImgPar {
+    width: 100%;
+    overflow: hidden;
+}
+
+.sliderImgPar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Imgtitle {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    max-width: 650px;
+    color: white;
+    font-size: 17px;
+}
+
+.Imgheading {
+    font-size: 50px;
+}
+
+.imgTitle {
+    padding: 10px 0px;
+    line-height: 1.7;
+}
+
+.pricerate {
+    padding: 15px;
+    font-size: 50px;
+}
+
+.ServerLink {
+    padding: 10px 0px;
+    max-width: 310px;
+    background: linear-gradient(to right, rgb(112, 0, 110), rgb(248, 80, 212));
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.ServerLink a {
+    width: 100%;
+    text-decoration: none;
+    font-weight: 900;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-wrap: wrap;
+}
+
+.section {
+    padding: 120px 0px;
+}
+
+.facilitesparents {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+.faclitiesCon {
+    padding: 7px 20px;
+    border-radius: 20px;
+    width: max-content;
+    border: 1px solid rgb(255, 253, 253);
+}
+
+.faclitiesCon a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.faclitiesCon h1 {
+    font-size: 3.2rem;
+    margin: 10px 0px;
+}
+
+.facilities {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    gap: 40px;
+    padding: 30px 0px;
+}
+
+.bgAttechment {
+    max-width: 1300px;
+    background-image: url('https://demo.bravisthemes.com/playhost/wp-content/uploads/2023/12/1.webp');
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: auto;
+}
+
+.bgcontain {
+    display: flex;
+    justify-content: space-between;
+    height: 70vh;
+    max-width: 1300px;
+    margin: auto;
+    right: 10px;
+    align-items: center;
+}
+
+.bgConTitlte {
+    max-width: 550px;
+    margin-left: 60px;
+}
+
+.bgImgattch {
+    height: 100%;
+}
+
+.bgImgattch img {
+    height: 100%;
+    width: 100%;
+}
+
+.WatchConparents {
+    max-width: 1300px;
+    margin: 30px auto;
+    border-style: none;
+}
+
+.WathIng {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: auto;
+    gap: 50px;
+}
+
+.ImgconWatchTilte {
+    padding: 20px 0px;
+}
+
+.ImgConWatch {
+    height: 400px;
+    width: 100%;
+}
+
+.ImgConWatch img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Cardparents {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    background-image: url('https://demo.bravisthemes.com/playhost/wp-content/uploads/2023/12/3.webp ');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.CardsCon {
+    max-width: 1300px;
+    margin: auto;
+    padding: 50px 0px;
+
+}
+
+.flxcardhead {
+    display: flex;
+    justify-content: space-between;
+}
+
+.HeadingListcard {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.HeadingListcard li {
+    background: #c6c6c62a;
+    padding: 4px 10px;
+    border-radius: 7px;
+}
+
+.HeadingListcard li a {
+    text-decoration: none;
+    color: white;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.CardList {
+    width: 100%;
+    border-radius: 10px;
+    height: 400px;
+    max-width: 320px;
+}
+
+.classImg {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.classImg img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+.cardTile {
+    width: 100%;
+    color: brown;
+    position: relative;
+    top: -80px;
+    padding: 0px 40px;
+    color: white;
+}
+
+.cardTile button {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    background: rgb(182, 10, 250);
+    border-style: none;
+    outline: none;
+    display: none;
+}
+
+.cardTile button a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 4px 0px;
+    color: white;
+}
+
+.CardList:hover .classImg img {
+    transform: rotate(4deg) scale(1.19);
+    transition-duration: 0.5s;
+}
+
+.CardList:hover .cardTile button {
+    display: block;
+}
+
+.CardList:hover .cardTile {
+    top: -110px;
+}
+
+.QuestioCon {
+    max-width: 1300px;
+    margin: 50px auto;
+    height: 100%;
+}
+
+.leftrightQuestion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+}
+
+.questionCon {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: rgb(62, 62, 62);
+    align-items: center;
+    padding: 6px 10px;
+    font-size: 19px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.questionBtn {
+    background-color: rgb(132, 55, 247);
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.ans {
+    text-align: justify;
+    display: none;
+    padding: 8px 0px;
+}
+
+.mobileCon {
+    background-image: url('https://demo.bravisthemes.com/playhost/wp-content/uploads/2023/12/2.webp');
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.mobileCon {
+    max-width: 1300px;
+    margin: 80px auto;
+    height: 60vh;
+}
+
+.mobileContain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.playPersonImg {
+    height: 68.25vh;
+    max-width: 400px;
+    position: relative;
+}
+
+.playPersonImg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    bottom: 60px;
+}
+
+.mobileTile {
+    max-width: 550px;
+}
+
+.paymentCon {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: auto;
+    align-items: end;
+}
+
+.paymentsource {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.paymentsource li {
+    width: 80px;
+    height: 50px;
+}
+
+.paymentsource li img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    background: #8383832b;
+    border-radius: 7px;
+}
+
+.Footerparents {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer1 {
+    max-width: 400px;
+    text-align: justify;
+}
+
+.footer2 strong,
+.footer3 strong,
+.footer4 strong {
+    font-size: 18px;
+}
+
+.footer2 li,
+.footer3 li {
+    list-style: none;
+    margin-top: 7px;
+    font-size: 17px;
+}
+
+.socalList {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 10px 0px;
+}
+
+.footer4 p {
+    padding: 10px 0px;
+}
+
+.socalList a i {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 9px;
+    border-radius: 10px;
+    background: #8383832b;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width:769px) and (max-width:1024px) {
+
+    .ListNavlink,
+    .ConHost {
+        display: none;
+    }
+
+    #MenuBar {
+        display: block;
+    }
+
+    .navBar {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    .Wallpaper {
+        height: 98vh;
+    }
+
+    .Imgtitle {
+        top: 35%;
+        left: 15%;
+    }
+
+    #right,
+    #left {
+        margin-top: 40%;
+    }
+
+    .faclitiesCon {
+        padding: 0px 20px;
+    }
+
+    .bgcontain {
+        gap: 60px;
+    }
+
+    .card {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0px 30px;
+    }
+
+    .mobileContain,
+    .paymentCon {
+        padding: 0px 20px;
+    }
+
+    .playPersonImg {
+        height: 66vh;
+    }
+
+    .playPersonImg img {
+        bottom: 50px;
+    }
+
+    .Footerparents {
+        padding: 0px 15px;
+    }
+
+    .footer1 {
+        max-width: 320px;
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:768px) {
+
+    .ListNavlink,
+    .ConHost {
+        display: none;
+    }
+
+    #MenuBar {
+        display: block;
+    }
+
+    .navBar {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    .Wallpaper {
+        height: 98vh;
+    }
+
+    .Wallpaper {
+        height: 98vh;
+    }
+
+    .Imgtitle {
+        top: 35%;
+        left: 15%;
+    }
+
+    #right,
+    #left {
+        margin-top: 50%;
+    }
+
+    .facilities {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bgAttechment {
+        height: 100%;
+        width: 90%;
+    }
+
+    .bgImgattch {
+        display: none;
+    }
+
+    .bgcontain {
+        height: 100%;
+        display: block;
+        padding: 30px 0px;
+        margin: 40px 0px;
+    }
+
+    .bgConTitlte {
+        margin: auto;
+    }
+
+    .WathIng {
+        display: block;
+        padding: 30px;
+    }
+
+    .flxcardhead {
+        display: block;
+        width: min-content;
+        margin: 30px auto;
+    }
+
+    .card {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0px 30px;
+    }
+
+    .leftrightQuestion {
+        display: block;
+        padding: 0px 30px;
+    }
+
+    .mobileCon {
+        background-image: none;
+    }
+
+    .mobileCon {
+        height: 100%;
+        width: max-content;
+    }
+
+    .mobileContain {
+        display: block;
+    }
+
+    .playPersonImg {
+        max-width: max-content;
+        margin: auto;
+        top: 60px;
+    }
+
+    .paymentCon {
+        display: block;
+        width: 100%;
+        margin: auto;
+        padding: 0px 20px;
+    }
+
+    .paymentsource {
+        max-width: min-content;
+        gap: 30px;
+    }
+
+    .Footerparents {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0px 20px;
+        gap: 50px;
+    }
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+
+    .ListNavlink,
+    .ConHost {
+        display: none;
+    }
+
+    #MenuBar {
+        display: block;
+    }
+
+    .navBar {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    .Wallpaper {
+        height: 98vh;
+    }
+
+    .Imgtitle {
+        top: 35%;
+        left: 10%;
+        padding: 0px 15px;
+        max-width: 450px;
+    }
+
+    #right,
+    #left {
+        margin-top: 85%;
+    }
+
+    .facilities {
+        display: block;
+        width: 100%;
+    }
+
+    .facilitiesList {
+        margin-top: 10px;
+    }
+
+    .bgAttechment {
+        height: 100%;
+        width: 90%;
+    }
+
+    .bgImgattch {
+        display: none;
+    }
+
+    .bgcontain {
+        height: 100%;
+        display: block;
+        padding: 30px 0px;
+        margin: 40px 0px;
+    }
+
+    .bgConTitlte {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .WathIng {
+        display: block;
+        padding: 20px;
+    }
+
+    .card {
+        display: block;
+        padding: 0px 40px;
+    }
+
+    .flxcardhead {
+        display: block;
+        width: min-content;
+        margin: 30px auto;
+    }
+
+    .CardList {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .leftrightQuestion {
+        display: block;
+        padding: 0px 20px;
+    }
+
+    .mobileCon {
+        background-image: none;
+    }
+
+    .mobileTile {
+        max-width: 400px;
+    }
+
+    .mobileCon {
+        height: 100%;
+        width: max-content;
+    }
+
+    .mobileContain {
+        display: block;
+        padding: 0px 20px;
+    }
+
+    .playPersonImg img {
+        max-width: max-content;
+        margin: auto;
+        top: 50px;
+        height: 50vh;
+    }
+
+    .paymentCon {
+        display: block;
+        max-width: 400px;
+        margin: auto;
+    }
+
+    .paymentsource {
+        max-width: min-content;
+        gap: 30px;
+    }
+
+    .Footerparents {
+        display: block;
+        width: max-content;
+        padding-bottom: 30px;
+    }
+
+    .footer2,
+    .footer3,
+    .footer4 {
+        margin-top: 20px;
+    }
+}
