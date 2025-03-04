@@ -289,3 +289,15 @@ showAnser.forEach((data, index) => {
         }
     })
 })
+
+
+const navBar = document.querySelector('.navBar');
+
+// Listen for the scroll event
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        navBar.classList.add('scrolled');
+    } else {
+        navBar.classList.remove('scrolled');
+    }
+});
