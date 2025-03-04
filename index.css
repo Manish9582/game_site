@@ -44,7 +44,11 @@ body {
     color: white;
     z-index: 10;
 }
-
+.scrolled{
+    background-color: black;
+    color: white;
+    width: 100%;
+}
 .logoCon {
     display: flex;
     grid-column: 1/3;

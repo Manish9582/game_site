@@ -291,11 +291,11 @@ showAnser.forEach((data, index) => {
 })
 
 
-const navBar = document.querySelector('.navBar');
+const navBar = document.querySelector('.navparentsClass');
 
 // Listen for the scroll event
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
+    if (window.scrollY > 100) {
         navBar.classList.add('scrolled');
     } else {
         navBar.classList.remove('scrolled');
