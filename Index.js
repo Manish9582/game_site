@@ -291,7 +291,7 @@ showAnser.forEach((data, index) => {
 })
 
 
-const navBar = document.querySelector('.navparentsClass');
+const navBar = document.querySelector('.NavbarCon');
 
 // Listen for the scroll event
 window.addEventListener('scroll', () => {

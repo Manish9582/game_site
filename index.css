@@ -27,6 +27,10 @@ body {
     background:rgba(176, 233, 255, 0.686);
     border-radius: 10px;
 }
+.scrolled{
+    background-color: white;
+    width: 100%;
+}
 .NavbarCon {
     background: linear-gradient(to right, rgb(112, 0, 110), rgb(248, 80, 212));
 }
@@ -44,11 +48,7 @@ body {
     color: white;
     z-index: 10;
 }
-.scrolled{
-    background-color: black;
-    color: white;
-    width: 100%;
-}
+
 .logoCon {
     display: flex;
     grid-column: 1/3;
